@@ -1,0 +1,256 @@
+.studentPortal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+}
+
+.studentPortal-h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.studentPortal-sidebarAndcontent {
+  display: flex;
+  width: 100%;
+  flex: 1 1;
+  overflow: hidden;
+}
+
+.studentPortal-sidebar {
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-list li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-list li:hover {
+  background-color: #444;
+}
+
+.sidebar-list li.active {
+  background-color: #555;
+}
+.sidebar-submenu {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  position: relative;
+}
+
+.submenu-list {
+  list-style-type: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.submenu-list.open {
+  display: block; /* Show the submenu when open */
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: block;
+}
+
+.submenu-list li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.submenu-list li.active {
+  font-weight: bold;
+}
+
+.studentPortal-content {
+  flex: 1 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow: auto;
+}
+
+.studentPortal-profile-div {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  accept invitations ----------------------- */
+.acceptInvitation-grid {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.acceptInvitation-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  gap: 25px;
+  padding: 10px;
+}
+
+.acceptInvitation-cards-detail {
+  text-align: justify;
+}
+
+p.cards-detail-p {
+  display: flex;
+  gap: 10px;
+}
+
+.acceptInvitation-img {
+  border: 2px solid;
+  padding: 5px;
+  background: white;
+}
+
+.invitation-response-btn {
+  background-color: #ffffff;
+  color: black;
+  padding: 7px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.invitation-response-btn:hover {
+  background-color: #333;
+  color: white;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* send requests ------------------ */
+
+.sendRequests-container {
+  margin-top: 3rem;
+}
+
+.sendRequests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sendRequests-cards {
+  border: 1px solid;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.sendRequest-btn {
+  margin-top: 1rem;
+  padding: 4px 7px;
+  background: white;
+  font-weight: bold;
+}
+button.sendRequest-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* classes css --------------------------*/
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.teachers-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 6px;
+  padding-bottom: 20px;
+  /* box-shadow: 3px 5px 7px #3e3d3d; */
+}
+
+.teachers-img {
+  background-color: white;
+  border: 1px solid;
+  box-shadow: 3px 5px 7px #3e3d3d;
+}
+
+.classes-btn , .goBack-btn{
+  background: white;
+  padding: 6px 9px;
+  border: 1px solid;
+  font-weight: 600;
+  margin-top: 1rem;
+  border-radius: 3px;
+  box-shadow: 3px 5px 7px #3e3d3d;
+}
+
+.goBack-btn, .tutorialVideos-container{
+  margin-top: 3rem;
+}
+
+.classes-btn:hover{
+  background:  #3e3d3d;
+  color: white;
+  border: 1px solid #333;
+}
+
+.teachers-detailDiv {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 0.5rem;
+}
+
+.teachers-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-teacher-data {
+  margin: 0;
+  padding: 10px;
+}

@@ -1,0 +1,46 @@
+.profile-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 435px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.profile-Deatil-Div {
+  padding: 20px;
+  margin-top: 3rem;
+}
+
+.logoutBtn {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 10px;
+  background: #00dbde;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  background: #fc00ff;
+}
+
+.hand-logo {
+  animation: colorChange 4s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #00dbde;
+  }
+  50% {
+    color: #fc00ff;
+  }
+  100% {
+    color: #00dbde;
+  }
+}

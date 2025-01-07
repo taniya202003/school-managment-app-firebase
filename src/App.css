@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+img{
+  height: 100px;
+}
+
+/* background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+background-size: cover;
+background-repeat: no-repeat; */

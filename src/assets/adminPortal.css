@@ -1,0 +1,208 @@
+.adminPortal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+}
+
+.adminPortal-h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.adminPortal-sidebarAndcontent {
+  display: flex;
+  width: 100%;
+  flex: 1 1;
+  overflow: hidden;
+}
+
+.adminPortal-sidebar {
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-list li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-list li:hover {
+  background-color: #444;
+}
+
+.sidebar-list li.active {
+  background-color: #555;
+}
+
+.sidebar-submenu {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  position: relative;
+}
+
+.submenu-list {
+  list-style-type: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.submenu-list.open {
+  display: block; /* Show the submenu when open */
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: block;
+}
+
+.submenu-list li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.submenu-list li.active {
+  font-weight: bold;
+}
+
+.adminPortal-content {
+  flex: 1 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  height: 100%;
+  overflow: auto;
+}
+
+.adminPortal-logoutBtn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  top: 250px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  transition: 0.9s;
+}
+
+.adminPortal-profile-div {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.adminPortal-h2 {
+  margin-bottom: 20px;
+}
+
+.adminPortal-profiles {
+  width: 100%;
+}
+
+.adminPortal-profiles-grid,
+.blockeduser-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  align-items: center;
+  gap: 20px;
+}
+
+.adminPortal-profile-cards,
+.blockeduser-cards {
+  border: 1px solid;
+  padding: 10px;
+}
+
+/* For the dropdown container ----------------- */
+.usersSettingDropDown {
+  position: relative;
+  text-align: end;
+}
+
+/* Style the button containing the icon */
+.usersSettingDropDown button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.usersSettingDropDown button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Dropdown options container */
+.dropdown-menu-options {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 100px;
+}
+
+/* Style individual dropdown options */
+.dropdown-menu-options p {
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu-options p:hover {
+  background-color: #ebe3e3;
+}
+
+/* Make sure the dropdown does not cause overflow */
+.adminPortal-profile-cards {
+  position: relative;
+  overflow: visible;
+}
+
+
+.adminProfilePic{
+  height: 200px;
+}

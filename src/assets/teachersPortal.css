@@ -1,0 +1,314 @@
+.teachersPortal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+}
+
+.teachersPortal-h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.teachersPortal-profile-div {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.teachersPortal-sidebarAndcontent {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.teachersPortal-sidebar {
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-list li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-list li:hover {
+  background-color: #444;
+}
+
+.sidebar-list li.active {
+  background-color: #555;
+}
+.sidebar-submenu {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  position: relative;
+}
+
+.submenu-list {
+  list-style-type: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.submenu-list.open {
+  display: block; /* Show the submenu when open */
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: block;
+}
+
+.submenu-list li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.submenu-list li.active {
+  font-weight: bold;
+}
+
+.teachersPortal-content {
+  flex: 1 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow: auto;
+}
+
+.teachersPortal-profile-Div {
+  border: 1px solid;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 3rem;
+  background: white;
+}
+
+/* vidoes css ------------------------------- */
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* send invitations -------------------------- */
+.sendInvitation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 20px;
+}
+
+.sendInvitation-profile-cards {
+  border: 1px solid;
+  padding: 10px;
+}
+
+button.sendInvitation-btn {
+  padding: 5px 10px;
+  margin-top: 1rem;
+  font-weight: bold;
+  background-color: white;
+}
+button.sendInvitation-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*  enrolled sudents ---------------------------- */
+.enrolledstudents-container {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
+  border-top: none;
+  margin-top: 2rem; 
+}
+
+.middleLine {
+  border: 1px solid;
+}
+
+.teachersPortal-h2-A , .teachersPortal-h2-B {
+  border: 2px solid;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.teachersPortal-h2-A {
+border-right: none ;
+border-left: none ;
+}
+.teachersPortal-h2-B {
+  border-right: none ;
+  border-left: none ;
+}
+
+.enrolledstudents-grid {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.enrolledStudent-list {
+  width: 100%;
+  /* border-right: 2px solid; */
+}
+
+.acceptedStudent-list {
+  width: 100%;
+}
+
+.enrolledstudents-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  gap: 25px;
+  padding: 10px;
+}
+
+.enrolledstudents-cardDetail {
+  text-align: justify;
+}
+
+.enrolledstudents-p {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* requests css --------------------------- */
+
+.requests-grid {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.requests-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  gap: 25px;
+  padding: 10px;
+}
+
+.requests-img {
+  background: white;
+  border: 2px solid;
+  padding: 5px;
+}
+
+.requests-p {
+  display: flex;
+  gap: 10px;
+}
+
+.requests-responseBtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 7px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.requests-responseBtn:hover {
+  background-color: #333;
+  color: white;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.teachersPortal-h2 {
+  margin-bottom: 0;
+}
+
+.adminPortal-profile-p {
+  margin-top: 0;
+}
+
+/* video page css --------------------------------------------------------------- */
+
+.add-video-form {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-video-input {
+  width: 100%;
+  max-width: 400px;
+  height: 30px;
+  border: 1px solid;
+  padding: 6px 9px;
+  border-radius: 3px;
+}
+
+
+.add-video-btn , .removeVideo-btn{
+  background: white;
+  padding: 6px 9px;
+  border: 1px solid;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add-video-btn:hover , .removeVideo-btn:hover{
+  background:  #3e3d3d;
+  color: white;
+  border: 1px solid #333;
+}
+
+.removeVideo-btn{
+  margin-top: 0.5rem;
+  padding: 3px 6px;
+}
